@@ -1,3 +1,6 @@
+:root {
+    --img-fundo: url('./img/aparecida.webp');
+}
 
 *{
     padding: 0;
@@ -10,7 +13,11 @@ body{
     display: flex;
     justify-content: center; /* centralizar no eixo X */
     align-items: center; /* centralizar no exo Y */
+    background-image: var(--img-fundo);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
+
 
 #trocar-img{
     display: flex;
@@ -22,10 +29,4 @@ body{
     font-size: 24px;
     cursor: pointer; /* muda de cor quando o mouse passa pela botão */
     z-index: 1;
-}
-
-#figura{
-    height: 100vh;
-    width: 100vw;
-    z-index: 0;
 }
